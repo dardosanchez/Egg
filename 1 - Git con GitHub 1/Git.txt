@@ -1,0 +1,122 @@
+============= GIT-GITHUB =============
+
+Posicionarnos en una carpeta
+cd "URL de la carpeta que quiero acceder"
+
+Inicializar un repositorio vacio (Crea una carpeta .git, oculta)
+git init
+
+Conectar un repositorio local con el remoto
+git remote add origim "URL" 
+
+
+
+============= ENVIO DE ARCHIVOS =============
+
+Ver el estado en que se encuentra el repositorio local
+git status 
+
+Para agregar los archivos al repositorio (se pueden editar y volver atras)
+git add "nombreDelArchivo" 
+git add . 
+
+Confrimar los archivos y etiquetarlos 
+git commit -m "MENSAJE"
+
+Enviar los archivos al repositorio remoto
+git push -u origin master
+
+
+
+============= RECIBIR ARCHIVOS =============
+Posicionarse en la carpeta donde quiere recibir el repositorio 
+
+Clone se utiliza para copiar todo el repositorio
+git clone "URL"
+
+Bajar los cambios que hiccieron en una rama
+git pull origin master 
+
+
+
+============= BRANCHES (RAMAS) =============
+
+Nos dice en que rama estamos parado actualmente
+git branch
+
+Crear una rama
+git branch nombreRama
+
+Cambiar el nombre de una rama
+git branch -m nombreRamaCreada nombreNuevo
+
+Pararse en otra rama 
+git checkout nombreRamaAPararse
+
+Eliminar una rama (No tengo que estar parado en la rama a eliminar)
+git branch -d nombreRamaEliminar
+
+
+
+============= CREAR ARCHIVOS EN UNA RAMA =============
+(Siempre hay que estar parado en la rama deseada)
+
+touch "archivoacrear.txt"
+
+Agregar y comitear que los cambios son exclusivos de la rama deseada
+git add . 
+git commit -m "Mensaje"
+
+
+
+============= DIFERENCIA ENTRE RAMAS Y UNIFICAR RAMAS =============
+
+Muestra la diferencia que existen entre dos ramas
+git diff nombreRama1 nombreRama2
+
+Cambiar a la rama a actualizar
+git checkout ramaAActualizar
+
+Unificar dos ramas en una sola (Pararse siempre en la rama que va a recibir los cambios) 
+git merge ramaOrigen ramaDestino
+
+Agregar todos los cambios
+git add .
+git commit -m "cambiosMaster"
+ 
+
+gi
+============= ADICIONALES =============
+
+git config user.name "nombredeUsuario"
+
+git config user.email "mail"
+
+Limpiar la Pantalla
+clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
