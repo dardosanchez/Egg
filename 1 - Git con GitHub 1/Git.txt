@@ -7,7 +7,7 @@ Inicializar un repositorio vacio (Crea una carpeta .git, oculta)
 git init
 
 Conectar un repositorio local con el remoto
-git remote add origim "URL" 
+git remote add origin "URL" 
 
 
 
@@ -84,8 +84,6 @@ Agregar todos los cambios
 git add .
 git commit -m "cambiosMaster"
  
-
-gi
 ============= ADICIONALES =============
 
 git config user.name "nombredeUsuario"
