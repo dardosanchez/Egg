@@ -9,7 +9,7 @@ public class NewMain {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         HashMap<String, Double> map = new HashMap<>();
-
+        
         TiendaServices ts = new TiendaServices();
 
         int respuesta;
