@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio1">
+  <ClassDiagramComponents>
+    <Class name="Animal" package="Entidad" visibility="public" xPosition="525.0" yPosition="36.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="alimento" type="String" visibility="protected"/>
+        <Field name="edad" type="int" visibility="protected"/>
+        <Field name="raza" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="alimento"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="raza"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getAlimento" returnType="String" visibility="public"/>
+        <Method name="setAlimento" returnType="void" visibility="public">
+          <Argument type="String" name="alimento"/>
+        </Method>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+        <Method name="getRaza" returnType="String" visibility="public"/>
+        <Method name="setRaza" returnType="void" visibility="public">
+          <Argument type="String" name="raza"/>
+        </Method>
+        <Method name="Alimentarse" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Perro" package="Entidad" visibility="public" xPosition="95.0" yPosition="479.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="alimento"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="raza"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Alimentarse" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Gato" package="Entidad" visibility="public" xPosition="468.0" yPosition="612.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="alimento"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="raza"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Alimentarse" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Caballo" package="Entidad" visibility="public" xPosition="856.0" yPosition="465.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="alimento"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="raza"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Alimentarse" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PrincipalAPP" package="Princiapal" visibility="public" xPosition="1203.0" yPosition="204.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Entidad.Gato" target="Entidad.Animal"/>
+    <IsRelation name="is" source="Entidad.Caballo" target="Entidad.Animal"/>
+    <IsRelation name="is" source="Entidad.Perro" target="Entidad.Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
