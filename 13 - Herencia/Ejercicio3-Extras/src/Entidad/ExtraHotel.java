@@ -31,6 +31,13 @@ public class ExtraHotel extends Alojamiento{
     public void setMetrosCuadrado(int metrosCuadrado) {
         this.metrosCuadrado = metrosCuadrado;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + 
+                "\n Privado: " + privado + 
+                "\n Metros Cuadrados: " + metrosCuadrado;
+    }
     
     
     

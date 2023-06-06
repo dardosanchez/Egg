@@ -86,11 +86,15 @@ public class HotelCuatroEstrella extends Hotel{
         
         return precio ; 
     }
-
+    
     @Override
     public String toString() {
         
-        return super.toString() + "HotelCuatroEstrella{" + "gimnasio=" + gimnasio + ", tipoGimnasio=" + tipoGimnasio + ", nombreRestaurante=" + nombreRestaurante + ", capacidadRest=" + capacidadRest + '}';
+        return super.toString() +  
+                "\n Gimnasio: " + gimnasio + 
+                "\n Tipo de Gimnasio: " + tipoGimnasio + 
+                "\n Nombre del Restaurante: " + nombreRestaurante + 
+                "\n Capacidad del Restaurante: " + capacidadRest;
     }
     
     

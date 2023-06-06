@@ -52,7 +52,10 @@ public class Alojamiento {
 
     @Override
     public String toString() {
-        return "Alojamiento{" + "nombre=" + nombre + ", direccion=" + direccion + ", localidad=" + localidad + ", gerente=" + gerente + '}';
+        return  "\n Nombre: " + nombre + 
+                "\n Direccion: " + direccion + 
+                "\n Localidad: " + localidad + 
+                "\n Gerente: " + gerente;
     }
     
     

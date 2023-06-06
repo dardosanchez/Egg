@@ -41,6 +41,14 @@ public class Camping extends ExtraHotel{
     public void setRestaurant(boolean restaurant) {
         this.restaurant = restaurant;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + 
+                "\n Capacidad de Carpas: " + capacidadCarpas + 
+                "\n Cantidad de baños: " + cantBaños + 
+                "\n Restaurante: " + restaurant;
+    }
     
     
     

@@ -41,6 +41,14 @@ public class Recidencia extends ExtraHotel{
     public void setCampoDeportivo(boolean campoDeportivo) {
         this.campoDeportivo = campoDeportivo;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + 
+                "Cantidad de Habitaciones: " + cantHabitaciones + 
+                "\n Descuento de Gremios: " + descuentoGremios + 
+                "\n Campo Deportivo: " + campoDeportivo ;
+    }
     
     
     
