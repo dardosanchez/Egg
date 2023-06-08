@@ -66,9 +66,9 @@ public class Hotel extends Alojamiento{
         
         return super.toString() +  
                 "\n Cantidad de Habitaciones: " + cantHabitaciones + 
-                "\n numCamas: " + numCamas + 
-                "\n cantPisos: " + cantPisos + 
-                "\n precioHabitaciones: " + precioHabitaciones;
+                "\n Numero de Camas: " + numCamas + 
+                "\n Cantidad de Pisos: " + cantPisos + 
+                "\n Precio de las Habitaciones: " + precioHabitaciones;
     }
     
     
