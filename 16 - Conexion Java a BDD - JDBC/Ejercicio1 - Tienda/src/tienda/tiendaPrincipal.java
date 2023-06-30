@@ -19,13 +19,14 @@ public class tiendaPrincipal {
         do{
             System.out.println("_________ MENU _________");
             System.out.println("1. Ingresar un Producto");
-            System.out.println("2. Mostrar los nombres de los Productos");
-            System.out.println("3. Mostrar los nombres y precios de los Productos");
-            System.out.println("4. Mostrar las Portatiles");
-            System.out.println("5. Mostrar productos entre $120 y $202");
-            System.out.println("6. Producto mas Barato");
-            System.out.println("7. Editar un Producto");
-            System.out.println("8. Salir");
+            System.out.println("2. Ingresar un Fabricante");
+            System.out.println("3. Mostrar los nombres de los Productos");
+            System.out.println("4. Mostrar los nombres y precios de los Productos");
+            System.out.println("5. Mostrar las Portatiles");
+            System.out.println("6. Mostrar productos entre $120 y $202");
+            System.out.println("7. Producto mas Barato");
+            System.out.println("8. Editar un Producto");
+            System.out.println("9. Salir");
             System.out.print("Ingrese una opcion: ");
             opcion = entrada.nextInt();
             
@@ -34,32 +35,35 @@ public class tiendaPrincipal {
                     productosService.crearProducto();
                     break;
                 case 2:
-                    productosService.listarNombresDeProductos();
+                    fabricanteService.crearFabricante();
                     break;
                 case 3:
+                    productosService.listarNombresDeProductos();
+                    break;
+                case 4:
                     productosService.listarNombresPreciosDeProductos();
                     break;  
-                case 4:
+                case 5:
                     productosService.listarPortatiles();
                     break;
-                case 5:
+                case 6:
                     productosService.listarProductosEntre120Y202();
                     break;
-                case 6:
+                case 7:
                     productosService.listarMasBarato();
                     break;
-                case 7:
+                case 8:
                     productosService.editarProducto();
                     break;
                 default:
-                    if(opcion != 8){
+                    if(opcion != 9){
                         System.out.println("Opcion incorrecta. Vuelva a intentarlo...");
                     }   
             }  
             System.out.println("");
             System.out.println("");
             System.out.println("");
-        } while(opcion != 8);  
+        } while(opcion != 9);  
     }
     
 }

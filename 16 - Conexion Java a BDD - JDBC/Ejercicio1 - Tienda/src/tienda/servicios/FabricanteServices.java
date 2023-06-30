@@ -1,6 +1,7 @@
 
 package tienda.servicios;
 
+import java.util.Scanner;
 import tienda.entidades.Fabricante;
 import tienda.persistencia.FabricanteDAO;
 
@@ -13,7 +14,12 @@ public class FabricanteServices {
         this.dao = new FabricanteDAO();
     }
     
-    public void crearFabricante (String nombre) {
+    public void crearFabricante () {
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("");
+        System.out.println("____ NUEVO FABRICANTE ____");
+        System.out.print("- Nombre del Fabricante: ");
+        String nombre = entrada.nextLine();
         
         try {
             // Valido el nombre
@@ -26,6 +32,7 @@ public class FabricanteServices {
             fabricante.setNombre(nombre);
             dao.guardarFabricante(fabricante);
             
+            System.out.println("");
             System.out.println("======================================");
             System.out.println("=  FABRICANTE AGREGADO CORRECTAMENTE  ");
             System.out.println("======================================");
